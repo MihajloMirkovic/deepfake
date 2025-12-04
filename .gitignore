@@ -1,0 +1,32 @@
+# Large dataset directories - DO NOT PUSH TO GITHUB
+faceforensics/
+deepfake-detector/data/
+deepfake-detector/outputs/models/
+
+# Video and image files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Keep .claude folder
+!.claude/

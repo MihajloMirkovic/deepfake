@@ -1,0 +1,27 @@
+data:
+  raw_videos_dir: "data/raw_videos"
+  frames_dir: "data/frames"
+
+preprocessing:
+  fps: 3
+  max_frames_per_video: 16
+  face_size: 224
+
+model:
+  name: "xception"  # fallback: tf_efficientnet_b0_ns
+  pretrained: true
+  num_classes: 1  # binary classification
+
+training:
+  epochs: 10
+  batch_size: 32
+  learning_rate: 0.0001
+  weight_decay: 0.01
+  early_stopping_patience: 3
+
+evaluation:
+  aggregation: "mean"  # or "median"
+  threshold: 0.5
+
+compression_test:
+  crf_values: [18, 28, 35]

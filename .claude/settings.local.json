@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p:*)",
+      "Bash(python src/01_split_custom.py:*)",
+      "Bash(python src/02_extract_frames.py:*)",
+      "Bash(python create_quick_subset.py:*)",
+      "Bash(python:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

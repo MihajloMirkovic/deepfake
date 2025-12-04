@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data directories - DO NOT PUSH
+data/
+data/raw_videos/
+data/raw_videos_subset/
+data/frames/
+faceforensics/
+*.mp4
+*.avi
+*.mov
+*.jpg
+*.jpeg
+*.png
+
+# Model files - TOO LARGE
+outputs/models/*.pt
+outputs/models/*.pth
+*.pt
+*.pth
+
+# Output files - REGENERATABLE
+outputs/metrics/
+outputs/plots/
+outputs/compression_test/
+
+# Temporary files
+*.log
+*.tmp
+*.cache
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Keep directory structure but ignore contents
+!data/.gitkeep
+!outputs/.gitkeep
+!outputs/models/.gitkeep
